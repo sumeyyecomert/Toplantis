@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kullanıcı Tarafından Belirlenen Saatlerle Toplantı Oluştur</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 20px;
+      }
+      label {
+        margin-bottom: 10px;
+        display: block;
+      }
+      input {
+        padding: 10px;
+        margin-bottom: 15px;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Toplantı Saatlerini Belirle</h1>
+
+    <form>
+      <label for="meetingTitle">Toplantı Başlığı:</label><br />
+      <input type="text" id="meetingTitle" name="meetingTitle" required /><br />
+
+      <label for="meetingDate">Toplantı Tarihi:</label><br />
+      <input type="date" id="meetingDate" name="meetingDate" required /><br />
+      <div id="hourInputs">
+        <label>Saatler:</label><br />
+        <input type="time" name="meetingHour[]" required /><br />
+      </div>
+
+      <button type="button" onclick="addHourInput()">Saat Ekle</button><br />
+
+      <button type="button" onclick="submitForm()">Toplantıyı Oluştur</button>
+    </form>
+
+    <script>
+      function addHourInput() {
+        var hourInputs = document.getElementById("hourInputs");
+        var newInput = document.createElement("input");
+        newInput.type = "time";
+        newInput.name = "meetingHour[]";
+        newInput.required = true;
+        hourInputs.appendChild(newInput);
+        hourInputs.appendChild(document.createElement("br"));
+      }
+
+      function submitForm() {
+        var title = document.getElementById("meetingTitle").value;
+        var date = document.getElementById("meetingDate").value;
+        var hourInputs = document.getElementsByName("meetingHour[]");
+
+        var selectedHours = [];
+        hourInputs.forEach(function (input) {
+          selectedHours.push(input.value);
+        });
+
+        alert(
+          "Toplantı Başlığı: " +
+            title +
+            "\nTarih: " +
+            date +
+            "\nSeçilen Saatler: " +
+            selectedHours.join(", ")
+        );
+        // Burada istediğiniz işlemleri yapabilirsiniz.
+      }
+    </script>
+  </body>
+</html>

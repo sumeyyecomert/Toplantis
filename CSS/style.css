@@ -1,0 +1,285 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+#menu {
+  height: 80px;
+  background-color: #f0bad4ca;
+  padding: 0px 20px;
+}
+
+#logo {
+  font-size: 30px;
+  line-height: 80px;
+  color: #442216;
+  float: left;
+}
+
+nav {
+  float: right;
+  line-height: 80px;
+}
+
+nav a:link {
+  text-decoration: none;
+  margin-right: 25px;
+  color: #442216;
+}
+
+nav a:hover {
+  border-bottom: 2px solid;
+}
+
+nav a:visited {
+  text-decoration: none;
+  margin-right: 25px;
+  color: #442216;
+}
+
+.btn-outline-light {
+  background-color: #f0bad4ca;
+  border-color: white;
+  padding: 15px 25px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  margin: 4px 2px;
+  color: black;
+  border-radius: 4px;
+}
+
+.btn-outline-light:hover {
+  background-color: #c676e5;
+  color: black;
+}
+
+#anasayfa {
+  height: 600px;
+  background: url("../img/merhaba2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* #black {
+  height: 600px;
+  background-color: black;
+  opacity: 0.5;
+} */
+
+#icerik {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  color: aliceblue;
+  font-size: 40px;
+}
+
+#hakkimizda {
+  background-color: #f0bad46f;
+  padding: 50px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 55px;
+  color: #492d27;
+  font-weight: 600;
+}
+
+.container {
+  width: 1200px;
+  height: auto;
+  margin: auto;
+}
+
+#sol {
+  float: left;
+  border-right: 3px solid #445c6e;
+  font-size: 30px;
+  width: 400px;
+  color: #445c6e;
+}
+
+#h5sol {
+  line-height: 1.6;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#h5sol,
+#sag {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+
+span {
+  font-size: 50px;
+  margin-right: 7px;
+  line-height: 42px;
+  color: black;
+  font-weight: 600;
+  float: left;
+}
+
+#sag {
+  float: right;
+  width: 750px;
+  color: black;
+  text-align: left;
+  letter-spacing: 1px;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 100;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.mt100 {
+  margin-top: 100px;
+}
+
+#pson {
+  color: black;
+  letter-spacing: 1px;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-top: 30px;
+  font-weight: 100;
+}
+
+#servislerimiz {
+  background-color: #f0bad46f;
+  padding: 50px;
+  text-align: center;
+  height: 700px;
+}
+
+.card {
+  width: 320px;
+  height: 350px;
+  border: 1px solid #f0bad4;
+  padding: 0;
+  display: inline-block;
+}
+.baslikcard {
+  font-size: 20px;
+  color: #492d27;
+  font-weight: 600;
+}
+
+.cardp {
+  color: black;
+}
+
+.card:hover {
+  border: 2px solid #492d27;
+}
+
+#iletisim {
+  /* background: url("../img/iletisim.jpg"); */
+  background-color: #f0bad46f;
+  background-size: cover;
+  padding: 50px;
+  height: auto;
+  text-align: center;
+}
+
+#h3iletisim {
+  color: #492d27;
+}
+
+#iletisimopak {
+  background: #c676e543;
+  padding: 30px 20px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  height: 550px;
+}
+
+#formgroup {
+  width: 700px;
+  float: left;
+}
+#solform {
+  width: 50%;
+  float: right;
+  padding-right: 5px;
+}
+#sagform {
+  width: 50%;
+  float: right;
+  padding-left: 5px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: rgb(25, 25, 25);
+  background-color: #f8e5bda2;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1 px solid #ced4da;
+}
+textarea {
+  font-family: Arial;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  background-color: #c676e543;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 10px 30px;
+  color: #492d27;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+adres {
+  width: 450px;
+  float: right;
+  padding: 30px;
+  height: 500px;
+  text-align: left;
+}
+#adresbaslik {
+  font-size: 30px;
+  color: white;
+}
+.adresp {
+  color: #ddd;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+}
+
+#copyright {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+#up {
+  color: rgb(166, 228, 121);
+  border: 1px solid #eab3b3;
+  border-radius: 50%;
+  font-size: 15px;
+  padding: 7px 12px;
+  margin-top: 20px;
+}
